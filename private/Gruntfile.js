@@ -1,29 +1,16 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    sass: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '../packages/style-core/styles/',
-          src: ['util.scss'],
-          dest: 'build',
-          ext: '.css'
-        }]
-      }
-    },
-    concat: {
-      dist: {
-        src: [],
-        dest: '../crystal/vendor/assets/stylesheets/vhx.quartz.1.0.css'
+    copy: {
+      main: {
+        src: '../.meteor/local/build/programs/web.browser/*.css',
+        dest: '../../crystal/vendor/assets/stylesheets/core.css'
       }
     }
-
   });
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('default', ['sass:dist']);
+  grunt.registerTask('build', ['copy']);
 
 };
