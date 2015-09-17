@@ -55,8 +55,6 @@
   background-size: contain;
   width: $icon-small;
   height: $icon-small;
-  text-indent: -9999px;
-
   &.icon--xsmall {
     width: $icon-xsmall;
     height: $icon-xsmall;
@@ -145,6 +143,5 @@
 .icon--xlarge {
   background-size: $icon-xlarge $icon-xlarge;
   background-position: 0 center;
-  padding-left: 48px;
   line-height: $icon-xlarge !important;
 }

@@ -146,8 +146,11 @@
       <ul class="margin-top-large small-block-grid-5 text-center">
         {{#each icons}}
             <li>
-              <h4 class="text-2 text--gray padding-bottom-small">{{name}}</h4>
-              <span class="is-inline {{css}}"><i class="icon icon--xlarge icon-{{name}}"></i></span>
+              <span class="is-inline {{css}}">
+                <svg class="icon icon--xlarge">
+                  <use xlink:href="#icon-{{name}}" />
+                </svg>
+              </span>
             </li>
         {{/each}}
       </ul>

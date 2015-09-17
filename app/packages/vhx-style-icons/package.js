@@ -27,7 +27,9 @@ Package.onUse(function(api) {
 
     'docs/code.html',
     'docs/guide.html',
-    'docs/guide.helpers.js'
+    'docs/guide.helpers.js',
+
+    'icon-sprite.html'
   ], 'client');
 
   api.export([]);
