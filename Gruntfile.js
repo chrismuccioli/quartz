@@ -1,6 +1,21 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    svgstore: {
+      options: {
+        cleanup: true,
+        includedemo: true,
+        prefix: 'icon-',
+        svg: {
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      },
+      default: {
+        files: {
+          'app/packages/vhx-style-icons/icon-sprite.html': ['app/private/svg-icons-source/*.svg']
+        }
+      }
+    },
     sass_globbing: {
       target : {
         files : {
@@ -114,8 +129,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-folder-list');
+  grunt.loadNpmTasks('grunt-svgstore');
 
   grunt.registerTask('build-icons', ['clean', 'fileregexrename:multiColorIcons', 'svgmin', 'grunticon:multiColor']);
   grunt.registerTask('build', ['sass_globbing', 'copy:iconExtends', 'sass']);
   grunt.registerTask('files', ['folder_list']);
+  grunt.registerTask('icons', ['svgstore']);
 }
