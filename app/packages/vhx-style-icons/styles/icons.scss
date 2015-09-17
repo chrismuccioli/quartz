@@ -81,6 +81,59 @@
   }
 }
 
+/* colors/hovers
+......................................*/
+.icon--alt {
+  path, use {
+    fill: $teal-2;
+  }
+  &:hover {
+    path, use {
+      fill: darken($teal-2, 50%);
+    }
+  }
+}
+.icon--mono {
+  path, use {
+    fill: $gray-7;
+  }
+  &:hover {
+    path, use {
+      fill: darken($gray-7, 50%);
+    }
+  }
+}
+.icon--gray {
+  path, use {
+    fill: $gray-4;
+  }
+  &:hover {
+    path, use {
+      fill: darken($gray-4, 50%);
+    }
+  }
+}
+.icon--light {
+  path, use {
+    fill: $gray-2;
+  }
+  &:hover {
+    path, use {
+      fill: darken($gray-2, 50%);
+    }
+  }
+}
+.icon--inverse {
+  path, use {
+    fill: $white;
+  }
+  &:hover {
+    path, use {
+      fill: darken($white, 50%);
+    }
+  }
+}
+
 /* sizes
 ......................................*/
 .icon--xsmall {
