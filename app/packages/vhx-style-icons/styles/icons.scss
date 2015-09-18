@@ -83,6 +83,11 @@
 
 /* colors/hovers
 ......................................*/
+.icon {
+  path, use {
+    fill: #000;
+  }
+}
 .icon--alt {
   path, use {
     fill: $teal-2;
