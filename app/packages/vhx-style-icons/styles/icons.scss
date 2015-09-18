@@ -139,7 +139,6 @@
 .icon--xsmall {
   background-size: $icon-xsmall $icon-xsmall;
   background-position: 0 center;
-  padding-left: 18px;
   &.text-1 {
     line-height: 24px;
   }
@@ -166,7 +165,6 @@
 .icon--small {
   background-size: $icon-small $icon-small;
   background-position: 0 center;
-  padding-left: 26px;
   line-height: $icon-small !important;
   &.text-1 {
     line-height: 24px !important;
@@ -181,7 +179,6 @@
 .icon--medium {
   background-size: $icon-medium $icon-medium;
   background-position: 0 center;
-  padding-left: 35px;
   line-height: $icon-medium !important;
   &.head-1 {
     line-height: 40px !important;
@@ -190,7 +187,6 @@
 .icon--large {
   background-size: $icon-large $icon-large;
   background-position: 0 center;
-  padding-left: 40px;
   line-height: $icon-large !important;
 }
 .icon--xlarge {
