@@ -49,19 +49,16 @@ select {
     border: 1px solid transparent;
   }
 
+  .icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(25%);
+  }
   &.icon--left {
-    background-position: left 21px center;
-    padding-left: 43px;
-
     .icon--right {
-      background-position: right 0px center;
-      padding-right: 21px;
-      background-size: 15px 15px;
     }
   }
   &.icon--right {
-    background-position: right 21px center;
-    padding-right: 43px;
   }
 }
 
@@ -293,9 +290,13 @@ select {
 .icon--center {
   background-position: center center !important;
   color: transparent !important;
-  padding: 0 20px !important;
+  padding: 0 !important;
   width: 40px;
   text-indent: -9999px;
+  .icon {
+    display: block;
+    margin: 0 auto;
+  }
 
   &.btn--small {
     width: 30px;
